@@ -1,0 +1,12 @@
+fastapi
+dotenv
+uvicorn
+pymongo
+contextlib
+motor
+passlib
+bson
+typing
+datetime
+requests
+pydantic
