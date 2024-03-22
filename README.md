@@ -2,11 +2,9 @@
 
 This is a small sample project demonstrating how to build an API with [MongoDB](https://developer.mongodb.com/) and [FastAPI](https://fastapi.tiangolo.com/).
 
-## TL;DR
+## Get Started
 
-If you really don't want to read the [blog post](https://developer.mongodb.com/quickstart/python-quickstart-fastapi/) and want to get up and running,
-activate your Python virtualenv, and then run the following from your terminal (edit the `MONGODB_URL` first!):
-To get this up and running activate your Python virtualenv and name it .venv inside the project directory
+To get this up and running activate your Python virtualenv (name it .venv) inside the project directory and then run the following from your terminal (edit the `MONGODB_URL` first!):
 ```bash
 # Creating virtual environment
 python -m venv .venv
