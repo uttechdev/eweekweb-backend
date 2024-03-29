@@ -5,7 +5,7 @@ from app.mongo_connection import mongo_client, orgs_global
 from bson import ObjectId
 from typing import List, Dict, Any
 from passlib.context import CryptContext
-from app.models import UserData, UserResponse, LoginRequest
+from app.models import UserData, UserResponse, LoginRequest, AttendanceForm
 from app.utils import serialize_document, extract_url_from_html
 
 router = APIRouter()
@@ -92,3 +92,8 @@ async def login(login_request: LoginRequest):
         # Make sure to not include sensitive data like the password in the response
         del user_data["hashed_pw"]
         return {"response": user_data}  # This matches the UserResponse model
+
+@router.post("/attendance_form", response_model=Dict[str, List[Any]])
+async def post_attendance(form: AttendanceForm):
+  async with mongo_client() as client:
+    pass

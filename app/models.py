@@ -50,3 +50,17 @@ class Org(BaseModel):
     name: str
     org_type: str
     is_admin: bool
+
+class AttendanceForm(BaseModel):
+    _id: str
+    event: str
+    timestamp: date
+    is_signin: bool
+    valid: bool
+    org: str
+    eid: str
+    name: str
+    year: str
+    event_code: str
+    major: str
+    error_flag: str
